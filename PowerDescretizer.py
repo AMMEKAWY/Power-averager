@@ -1,10 +1,10 @@
 import math
 
-
+no=18           #THE NUMBER OF AVERAGES
 mu=10000
-xi=0
-xf=18
-n=(math.sqrt((xf-xi)**2)/(18*mu-1))
+xi=-90          #INITIAL X
+xf=90           #FINAL X
+n=(math.sqrt((xf-xi)**2)/(no*mu-1))
 x=[xi]
 y=[]
 i=0
@@ -34,7 +34,7 @@ def mn(t,i):
     return y[t+i]
 
 
-while (t+i-mu) != 18*mu  :
+while (t+i-mu) != no*mu  :
     i=0
     m=0
     while i != mu:
